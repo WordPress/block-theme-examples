@@ -21,7 +21,7 @@
 
 				<!-- wp:group {"tagName":"header","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
 				<header class="wp-block-group">
-					<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"},"fontSize":"lg"} -->
+					<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 					<div class="wp-block-group">
 						<!-- wp:post-date /-->
 					</div>
