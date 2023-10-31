@@ -14,6 +14,11 @@
 					"slug": "contrast",
 					"color": "#000000",
 					"name": "Contrast"
+				},
+				{
+					"slug": "primary",
+					"color": "#1d4ed8",
+					"name": "Primary"
 				}
 			]
 		},
@@ -23,91 +28,10 @@
 		},
 		"spacing": {
 			"blockGap": true,
-			"customSpacingSize": true,
 			"margin": true,
-			"padding": true,
-			"spacingSizes": [
-				{
-					"name": "Pixel - Fixed (1px)",
-					"size": "1px",
-					"slug": "px"
-				},
-				{
-					"name": "Step 1 - Fixed (0.25rem)",
-					"size": "0.25rem",
-					"slug": "10"
-				},
-				{
-					"name": "Step 2 - Fixed (0.5rem)",
-					"size": "0.5rem",
-					"slug": "20"
-				},
-				{
-					"name": "Step 3 - Fixed (0.75rem)",
-					"size": "0.75rem",
-					"slug": "30"
-				},
-				{
-					"name": "Step 4 - Fixed (1rem)",
-					"size": "1rem",
-					"slug": "40"
-				},
-				{
-					"name": "Step 5 - Fixed (1.25rem)",
-					"size": "1.25rem",
-					"slug": "50"
-				},
-				{
-					"name": "Step 6 - Fixed (1.5rem)",
-					"size": "1.5rem",
-					"slug": "60"
-				},
-				{
-					"name": "Step 7 - Fixed (1.75rem)",
-					"size": "1.75rem",
-					"slug": "70"
-				},
-				{
-					"name": "Step 8 - Fixed (2rem)",
-					"size": "2rem",
-					"slug": "80"
-				},
-				{
-					"name": "Step 9 - Fluid (2.25rem)",
-					"size": "clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 1.0417)), 2.25rem)",
-					"slug": "90"
-				},
-				{
-					"name": "Step 10 - Fluid (2.5rem)",
-					"size": "clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 2.0833)), 2.5rem)",
-					"slug": "100"
-				},
-				{
-					"name": "Step 12 - Fluid (3rem)",
-					"size": "clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 4.1667)), 3rem)",
-					"slug": "120"
-				},
-				{
-					"name": "Step 16 - Fluid (4rem)",
-					"size": "clamp(2rem, calc(2rem + ((1vw - 0.4rem) * 8.3333)), 4rem)",
-					"slug": "160"
-				},
-				{
-					"name": "Step 24 - Fluid (6rem)",
-					"size": "clamp(4rem, calc(4rem + ((1vw - 0.4rem) * 8.3333)), 6rem)",
-					"slug": "240"
-				},
-				{
-					"name": "Step 32 - Fluid (8rem)",
-					"size": "clamp(4rem, calc(4rem + ((1vw - 0.4rem) * 16.6667)), 8rem)",
-					"slug": "320"
-				}
-			],
-			"units": [ "rem", "em", "%", "vh", "vw", "px" ]
+			"padding": true
 		},
 		"typography": {
-			"customFontSize": false,
-			"dropCap": true,
 			"fontFamilies": [
 				{
 					"fontFamily": "ui-sans-serif, sans-serif",
@@ -120,57 +44,8 @@
 					"name": "Secondary (Serif)"
 				}
 			],
-			"fontSizes": [
-				{
-					"name": "Extra Small - Fixed",
-					"size": "0.875rem",
-					"slug": "xs"
-				},
-				{
-					"name": "Small - Fixed",
-					"size": "0.9375rem",
-					"slug": "sm"
-				},
-				{
-					"name": "Medium - Fixed",
-					"size": "1rem",
-					"slug": "md"
-				},
-				{
-					"name": "Large - Fluid",
-					"size": "clamp( 1.0625rem, 0.625cqi + 0.85rem, 1.125rem )",
-					"slug": "lg"
-				},
-				{
-					"name": "Extra Large - Fluid",
-					"size": "clamp( 1.125rem, 1.25cqi + 0.7rem, 1.25rem )",
-					"slug": "xl"
-				},
-				{
-					"name": "2XL - Fluid",
-					"size": "clamp( 1.25rem, 2.5cqi + 0.4rem, 1.5rem )",
-					"slug": "2-xl"
-				},
-				{
-					"name": "3XL - Fluid",
-					"size": "clamp( 1.5rem, 3.75cqi + 0.225rem, 1.875rem )",
-					"slug": "3-xl"
-				},
-				{
-					"name": "4XL - Fluid",
-					"size": "clamp( 1.75rem, 5cqi + 0.05rem, 2.25rem )",
-					"slug": "4-xl"
-				},
-				{
-					"name": "5XL - Fluid",
-					"size": "clamp( 2rem, 5.55556cqi + 0.11111rem, 3rem )",
-					"slug": "5-xl"
-				}
-			],
-			"fontStyle": true,
-			"fontWeight": true,
-			"letterSpacing": true,
-			"lineHeight": false,
+			"fluid": true,
+			"lineHeight": true,
 			"textDecoration": true,
 			"textTransform": true
 		},
@@ -182,23 +57,28 @@
 			"background": "var:preset|color|base"
 		},
 		"spacing": {
-			"blockGap": "2rem",
+			"blockGap": "2.25rem",
 			"padding": {
 				"top": "0",
 				"bottom": "0",
-				"left": "2rem",
-				"right": "2rem"
+				"left": "var:preset|spacing|60",
+				"right": "var:preset|spacing|60"
 			}
 		},
 		"typography": {
 			"fontFamily": "var:preset|font-family|secondary",
-			"fontSize": "var:preset|font-size|xl",
+			"fontSize": "var:preset|font-size|medium",
 			"lineHeight": "1.67"
 		},
 		"elements": {
 			"heading": {
 				"typography": {
 					"fontFamily": "var:preset|font-family|primary"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var:preset|color|primary"
 				}
 			}
 		}
