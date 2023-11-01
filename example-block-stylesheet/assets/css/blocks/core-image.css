@@ -1,0 +1,4 @@
+.wp-block-image img {
+	padding: 1rem;
+	background: linear-gradient( -60deg, #ff5858, #f09819 );
+}
