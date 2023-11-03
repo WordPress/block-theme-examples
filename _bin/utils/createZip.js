@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const archiver = require("archiver");
 
-const destinationContainerFolder = path.join(process.cwd(), "zips")
+const destinationContainerFolder = path.join(process.cwd(), "_zips")
 
 module.exports = folderName => {
   const rootPath = process.cwd();

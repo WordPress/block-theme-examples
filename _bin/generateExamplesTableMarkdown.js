@@ -1,22 +1,17 @@
 const { join } = require("path");
 const fs = require("fs");
 const toMarkdownTable = require("markdown-table");
-const { info, error } = require("../log");
+const { info, error } = require("./utils/log");
 
 const rootPath = process.cwd();
 const readmePathRoot = join(rootPath, "README.md");
 const examplesJsonPath = join(rootPath, "data/examples.json");
-const tagsJsonPath = join(rootPath, "data/tags.json");
 
 const {
-  PLAYGROUND_URL_WITH_PLUGIN,
-  PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG,
-  SLUG_EXAMPLE_MARKER,
-  URL_EXAMPLE_ZIP,
-  URL_WIKI,
-  WIKI_PAGE_WHY_ID,
-  WIKI_PAGE_TAGS,
-  URL_ASSETS
+  URL_EXAMPLE_BASE,
+  URL_EXAMPLE_THEME_ZIP,
+  PLAYGROUND_URL_WITH_THEMES,
+  SLUG_EXAMPLE_MARKER
 } = require("./constants");  
 
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
