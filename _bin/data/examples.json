@@ -1,9 +1,5 @@
 [
 	{
-		"slug": "base",
-		"description": "Base - Block Theme Example"
-	},
-	{
 		"slug": "example-block-style-js",
 		"description": "Child Theme - Block Theme Example"
 	},
