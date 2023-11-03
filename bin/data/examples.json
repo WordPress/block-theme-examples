@@ -1,0 +1,30 @@
+[
+	{
+		"slug": "base",
+		"description": "Base - Block Theme Example"
+	},
+	{
+		"slug": "example-block-style-js",
+		"description": "Child Theme - Block Theme Example"
+	},
+	{
+		"slug": "example-block-style-php",
+		"description": "Child Theme - Block Theme Example"
+	},
+	{
+		"slug": "example-block-stylesheet",
+		"description": "Child Theme - Block Theme Example"
+	},
+	{
+		"slug": "example-block-variation",
+		"description": "Child Theme - Block Theme Example"
+	},
+	{
+		"slug": "example-build-process",
+		"description": "Child Theme - Block Theme Example"
+	},
+	{
+		"slug": "example-template-part-area",
+		"description": "Child Theme - Block Theme Example"
+	}
+]
