@@ -5,13 +5,14 @@ const { info, error } = require("./utils/log");
 
 const rootPath = process.cwd();
 const readmePathRoot = join(rootPath, "README.md");
-const examplesJsonPath = join(rootPath, "data/examples.json");
+const examplesJsonPath = join(rootPath, "_bin/data/examples.json");
 
 const {
-  URL_EXAMPLE_BASE,
   URL_EXAMPLE_THEME_ZIP,
   PLAYGROUND_URL_WITH_THEMES,
-  SLUG_EXAMPLE_MARKER
+  SLUG_EXAMPLE_MARKER,
+  URL_REPO,
+  REPO_ORIGIN
 } = require("./constants");  
 
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
@@ -20,7 +21,6 @@ const endMarker = "<!-- @TABLE EXAMPLES END -->";
 module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
   
   const examplesJson = JSON.parse(fs.readFileSync(examplesJsonPath, "utf8"));
-  const tagsJson = JSON.parse(fs.readFileSync(tagsJsonPath, "utf8"));
   const markdownContent = fs.readFileSync(readmePath, "utf8");
     
   const regex = new RegExp(
@@ -32,37 +32,22 @@ module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
   //   .replace(startMarker, "")
   //   .replace(endMarker, "");
 
-  const processedTags = tagsJson.reduce(
-    (acc, { slug, name }) => ({ ...acc, [slug]: name }),
-    {}
-  );
-  let processedExamplesJson = examplesJson;
-  if (slugReadme) {
-    processedExamplesJson = examplesJson.filter(({ slug }) => slug === slugReadme);
-  } 
 
-  const urlAssetIconWp = `https://raw.githubusercontent.com/wordpress-juanmaguitar/wp-block-development-examples/trunk/assets/icon-wp.svg`;
-  const urlRepo = `https://github.com/wordpress-juanmaguitar/wp-block-development-examples/tree/trunk`
-  const markdownTableRows = processedExamplesJson.map(({ slug, description, tags }) => {
-    const id = slug.split("-").pop();
-    let playgroundUrl = PLAYGROUND_URL_WITH_PLUGIN.replaceAll(SLUG_EXAMPLE_MARKER,slug);
-    if (tags.includes('gutenberg-plugin')) playgroundUrl = PLAYGROUND_URL_WITH_PLUGIN_AND_GUTENBERG.replaceAll(SLUG_EXAMPLE_MARKER,slug);
-    const urlZip = URL_EXAMPLE_ZIP.replaceAll(SLUG_EXAMPLE_MARKER,slug);
-    const descLinkZip = `Install the plugin using this zip and activate it. Then use the ID of the block (${id}) to find it and add it to a post to see it in action`
-    const descLinkPlayground = `Use the ID of the block (${id}) to find it and add it to a post to see it in action`
+  const markdownTableRows = examplesJson.map(({ slug, description }) => {
+
+    let playgroundUrl = PLAYGROUND_URL_WITH_THEMES.replaceAll(SLUG_EXAMPLE_MARKER,slug);
+    const urlZip = URL_EXAMPLE_THEME_ZIP.replaceAll(SLUG_EXAMPLE_MARKER,slug);
+    const urlAssetIconWp = `https://raw.githubusercontent.com/${REPO_ORIGIN}/trunk/assets/icon-wp.svg`;
+
     return [
-      `[📁](${urlRepo}/plugins/${slug})`,
+      `[📁](${URL_REPO}/plugins/${slug})`,
       description,
-      tags
-        .map((tagSlug) => `<small><code><a href="${URL_WIKI}/${WIKI_PAGE_TAGS}#${tagSlug}">${processedTags[tagSlug]}</a></code></small>`)
-        .join(", "),
-      "`" + id + "`",
-      `[📦](${urlZip} "${!tags.includes('no-block') ? descLinkZip : '' }")`,
-      `[![](${urlAssetIconWp})](${playgroundUrl} "${!tags.includes('no-block') ? descLinkPlayground : ''}")`,
+      `[📦](${urlZip})`,
+      `[![](${urlAssetIconWp})](${playgroundUrl})`,
     ];
   });
   const markdownTable = toMarkdownTable([
-    ["Folder", `<span style="display: inline-block; width:250px">Short description</span>`, "Tags", `ID ([❓](${URL_WIKI}/${WIKI_PAGE_WHY_ID} "Why an ID for every example?"))`, "Download .zip", "Live Demo"],
+    ["Folder", `Short description`, "Download .zip", "Live Demo"],
     ...markdownTableRows,
   ]);
 
