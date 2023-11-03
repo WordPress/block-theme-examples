@@ -39,6 +39,7 @@ module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
     const urlZip = URL_EXAMPLE_THEME_ZIP.replaceAll(SLUG_EXAMPLE_MARKER,slug);
     const urlAssetIconWp = `https://raw.githubusercontent.com/${REPO_ORIGIN}/master/_assets/icon-wp.svg`;
 
+    // console.log ({[slug]: playgroundUrl}); 
     return [
       `[📁](${URL_REPO}/${slug})`,
       description,
