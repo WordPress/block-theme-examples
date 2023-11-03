@@ -40,7 +40,7 @@ module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
     const urlAssetIconWp = `https://raw.githubusercontent.com/${REPO_ORIGIN}/master/_assets/icon-wp.svg`;
 
     return [
-      `[📁](${URL_REPO}/plugins/${slug})`,
+      `[📁](${URL_REPO}/${slug})`,
       description,
       `[📦](${urlZip})`,
       `[![](${urlAssetIconWp})](${playgroundUrl})`,
