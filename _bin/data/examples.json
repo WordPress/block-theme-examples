@@ -1,26 +1,26 @@
 [
 	{
 		"slug": "example-block-style-js",
-		"description": "Child Theme - Block Theme Example"
+		"description": "example-block-style-js"
 	},
 	{
 		"slug": "example-block-style-php",
-		"description": "Child Theme - Block Theme Example"
+		"description": "example-block-style-php"
 	},
 	{
 		"slug": "example-block-stylesheet",
-		"description": "Child Theme - Block Theme Example"
+		"description": "example-block-stylesheet"
 	},
 	{
 		"slug": "example-block-variation",
-		"description": "Child Theme - Block Theme Example"
+		"description": "example-block-variation"
 	},
 	{
 		"slug": "example-build-process",
-		"description": "Child Theme - Block Theme Example"
+		"description": "example-build-process"
 	},
 	{
 		"slug": "example-template-part-area",
-		"description": "Child Theme - Block Theme Example"
+		"description": "example-template-part-area"
 	}
 ]
