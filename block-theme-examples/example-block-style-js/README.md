@@ -1,3 +1,0 @@
-# Block Theme Examples
-
-...write description...
