@@ -8,7 +8,7 @@
 		"./example-block-variation",
 		"./example-build-process",
 		"./example-template-part-area",
-		"WordPress/twentytwentyfour"
+		"https://downloads.wordpress.org/theme/twentytwentythree.1.2.zip"
 	],
 	"config": {
 		"WP_DEBUG": true,
