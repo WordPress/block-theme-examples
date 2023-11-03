@@ -1,1 +1,1 @@
-- [Download theme link](https://raw.githubusercontent.com/wordpress-juanmaguitar/block-theme-examples/master/block-theme-examples.zip)
+- [Download theme link](https://raw.githubusercontent.com/wordpress-juanmaguitar/block-theme-examples/master/zips/example-block-style-js/block-theme-examples.zip)
