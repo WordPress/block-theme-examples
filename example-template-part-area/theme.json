@@ -13,9 +13,14 @@
 			"title": "Footer"
 		},
 		{
-			"area": "comments",
-			"name": "comments",
-			"title": "Comments"
+			"area": "sidebar",
+			"name": "sidebar",
+			"title": "Sidebar"
+		},
+		{
+			"area": "uncategorized",
+			"name": "post-meta",
+			"title": "Post Meta"
 		}
 	]
 }

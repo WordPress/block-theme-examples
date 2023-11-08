@@ -20,15 +20,15 @@ add_filter( 'default_wp_template_part_areas', 'themeslug_template_part_areas' );
 function themeslug_template_part_areas( $default_area_definitions ) {
 
 	$default_area_definitions[] = array(
-		'area'        => 'comments',
-		'area_tag'    => 'section',
-		'label'       => __( 'Comments', 'example-template-part-area' ),
-		'description' => __( 'The Comments template defines a page area that typically contains the post comments list and form.', 'example-template-part-area' ),
+		'area'        => 'sidebar',
+		'area_tag'    => 'div',
+		'label'       => __( 'Sidebar', 'example-template-part-area' ),
+		'description' => __( 'The Sidebar template defines a page area that typically contains site metadata.', 'example-template-part-area' ),
 		// Core only supports four icons at the moment, so this
 		// one doesn't actually appear. But the value must be
 		// defined to avoid an error.
 		// @link https://github.com/WordPress/gutenberg/issues/36814
-		'icon'        => 'comments'
+		'icon'        => 'sidebar'
 	);
 
 	return $default_area_definitions;

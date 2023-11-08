@@ -12,7 +12,7 @@
 add_action( 'init', 'themeslug_enqueue_block_stylesheets' );
 
 /**
- * Filters the core template part areas to add custom areas.
+ * Enqueues a block-specific stylesheet on the `init` hook.
  *
  * @since 1.0.0
  * @link  https://developer.wordpress.org/reference/functions/wp_enqueue_block_style/

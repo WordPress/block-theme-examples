@@ -1,9 +1,6 @@
-const { registerBlockVariation } = wp.blocks;
-const { __ } = wp.i18n;
-
-registerBlockVariation( 'core/spacer', {
+wp.blocks.registerBlockVariation( 'core/spacer', {
 	name:       'themeslug/spacer',
-	title:      __( 'Theme Name: Spacer', 'example-block-variation' ),
+	title:      wp.i18n.__( 'Theme Name: Spacer', 'example-block-variation' ),
 	keywords:   [ 'space', 'spacer', 'spacing' ],
 	scope:      [ 'block', 'inserter', 'transform' ],
 	attributes: {
