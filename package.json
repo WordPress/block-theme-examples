@@ -1,0 +1,19 @@
+{
+  "name": "block-theme-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "zip:create:all": "node ./_bin/createAllZipsExamples.js",
+    "table:update": "node ./_bin/updateTableMarkdown.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "archiver": "^6.0.1",
+    "markdown-table": "2",
+    "chalk": "4.1.1"
+  }
+}

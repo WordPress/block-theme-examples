@@ -1,0 +1,19 @@
+{
+	"phpVersion": "7.4",
+	"port": 3333,
+	"themes": [
+		"./example-block-style-js",
+		"./example-block-style-php",
+		"./example-block-stylesheet",
+		"./example-block-variation",
+		"./example-build-process",
+		"./example-template-part-area",
+		"https://downloads.wordpress.org/theme/twentytwentyfour.1.0.zip"
+	],
+	"config": {
+		"WP_DEBUG": true,
+		"WP_DEBUG_LOG": true,
+		"WP_DEBUG_DISPLAY": true,
+		"SCRIPT_DEBUG": true
+	}
+}

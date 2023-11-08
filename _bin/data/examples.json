@@ -1,0 +1,26 @@
+[
+	{
+		"slug": "example-block-style-js",
+		"description": "example-block-style-js"
+	},
+	{
+		"slug": "example-block-style-php",
+		"description": "example-block-style-php"
+	},
+	{
+		"slug": "example-block-stylesheet",
+		"description": "example-block-stylesheet"
+	},
+	{
+		"slug": "example-block-variation",
+		"description": "example-block-variation"
+	},
+	{
+		"slug": "example-build-process",
+		"description": "example-build-process"
+	},
+	{
+		"slug": "example-template-part-area",
+		"description": "example-template-part-area"
+	}
+]
