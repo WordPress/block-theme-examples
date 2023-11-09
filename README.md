@@ -1,3 +1,18 @@
+# Block Theme Examples
+
+This repository is meant to showcase various WordPress block-related features and how to use them in your theme. The goal is to provide concise code examples that serve as a foundation for your projects. They are meant for development purposes to customize however you need.
+
+Each sub-folder is an individual child theme of [Twenty Twenty-Four](https://wordpress.org/themes/twentytwentyfour) and contains a `README.md` file that explains the example. The decision to use child themes was to create small examples that only had the code needed for the feature.
+
+Each of the examples also have corresponding documentation in either the [WordPress Theme Handbook](https://developer.wordpress.org/themes) or [WordPress Developer Blog](https://developer.wordpress.org/news).
+
+**Requirements:**
+
+- You must be running at least WordPress 6.4.
+- You must have the [Twenty Twenty-Four](https://wordpress.org/themes/twentytwentyfour) theme installed in your `wp-content/themes` folder.
+
+## Download or Test Live
+
 <!-- Please, do not remove these @TABLE EXAMPLES BEGIN and @TABLE EXAMPLES END comments or modify the table inside. This table is automatically generated from the data at data/examples.json and data/tags.json -->
 <!-- @TABLE EXAMPLES BEGIN -->
 | Folder                                                                                                      | Short description          | Download .zip                                                                                                                   | Live Demo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
