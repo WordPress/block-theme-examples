@@ -1,4 +1,4 @@
-# Example: Block Stylesheet
+# Example: Template Part Area
 
 This is an example child theme of the [Twenty Twenty-Four](https://wordpress.org/themes/twentytwentyfour/) theme, which is required for this example to work.
 
