@@ -1,4 +1,4 @@
-const REPO_ORIGIN = "wordpress-juanmaguitar/block-theme-examples";
+const REPO_ORIGIN = "justintadlock/block-theme-examples";
 const SLUG_EXAMPLE_MARKER = "<%SLUG_EXAMPLE_MARKER%>";
 const URL_EXAMPLE_BASE = `https://raw.githubusercontent.com/${REPO_ORIGIN}/master/zips/base.zip`;
 const URL_EXAMPLE_THEME_ZIP = `https://raw.githubusercontent.com/${REPO_ORIGIN}/master/_zips/${SLUG_EXAMPLE_MARKER}.zip`;
