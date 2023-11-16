@@ -20,6 +20,10 @@
 		"description": "example-build-process"
 	},
 	{
+		"slug": "example-locked-pattern",
+		"description": "example-locked-pattern"
+	},
+	{
 		"slug": "example-template-part-area",
 		"description": "example-template-part-area"
 	}
