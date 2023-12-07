@@ -12,7 +12,8 @@ const {
   PLAYGROUND_URL_WITH_THEMES,
   SLUG_EXAMPLE_MARKER,
   URL_REPO,
-  REPO_ORIGIN
+  REPO_ORIGIN,
+  URL_PLAYGROUND_BLUEPRINT
 } = require("./constants");  
 
 const startMarker = "<!-- @TABLE EXAMPLES BEGIN -->";
@@ -41,6 +42,14 @@ module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
     let playgroundUrl = PLAYGROUND_URL_WITH_THEMES.replaceAll(SLUG_EXAMPLE_MARKER,slug);
     const urlZip = URL_EXAMPLE_THEME_ZIP.replaceAll(SLUG_EXAMPLE_MARKER,slug);
     const urlAssetIconWp = `https://raw.githubusercontent.com/${REPO_ORIGIN}/master/_assets/icon-wp.svg`;
+
+    const pathBlueprint = `${rootPath}/${slug}/_playground/blueprint.json`;
+
+    if (fs.existsSync(pathBlueprint)) {
+      let playgroundUrlBlueprint = URL_PLAYGROUND_BLUEPRINT.replaceAll(SLUG_EXAMPLE_MARKER,slug);
+      playgroundUrl = `https://playground.wordpress.net/?blueprint-url=${playgroundUrlBlueprint}`;
+    }
+
 
     // console.log ({[slug]: playgroundUrl}); 
     return [
