@@ -65,7 +65,7 @@ module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
       `[📁](${URL_REPO}/${slug})`,
       description,
       tags
-        .map((tagSlug) => `<small><code><a href="${URL_WIKI}/${WIKI_PAGE_TAGS}#${tagSlug}">${processedTags[tagSlug]}</a></code></small>`)
+        .map((tagSlug) => `<small><code><a target="_blank" href="${URL_WIKI}/${WIKI_PAGE_TAGS}#${tagSlug}">${processedTags[tagSlug]}</a></code></small>`)
         .join(", "),
       `[📦](${urlZip})`,
       `[![](${urlAssetIconWp})](${playgroundUrl})`,
