@@ -1,0 +1,7 @@
+{
+	"core": "WordPress/WordPress",
+	"themes": [
+		"https://downloads.wordpress.org/theme/twentytwentyfour.1.0.zip",
+		"."
+	]
+}

@@ -1,30 +1,60 @@
 [
 	{
 		"slug": "example-block-style-js",
-		"description": "example-block-style-js"
+		"description": "example-block-style-js",
+		"tags": [
+			"block-theme",
+			"block-style",
+			"javascript"
+		  ]
 	},
 	{
 		"slug": "example-block-style-php",
-		"description": "example-block-style-php"
+		"description": "example-block-style-php",
+		"tags": [
+			"block-theme",
+			"block-style",
+			"php"
+		  ]
 	},
 	{
 		"slug": "example-block-stylesheet",
-		"description": "example-block-stylesheet"
+		"description": "example-block-stylesheet",
+		"tags": [
+			"block-theme",
+			"php"
+		  ]
 	},
 	{
 		"slug": "example-block-variation",
-		"description": "example-block-variation"
+		"description": "example-block-variation",
+		"tags": [
+			"block-theme",
+			"javascript"
+		  ]
 	},
 	{
 		"slug": "example-build-process",
-		"description": "example-build-process"
+		"description": "example-build-process",
+		"tags": [
+			"block-theme",
+			"javascript"
+		  ]
 	},
 	{
 		"slug": "example-locked-pattern",
-		"description": "example-locked-pattern"
+		"description": "example-locked-pattern",
+		"tags": [
+			"block-theme",
+			"curation"
+		  ]
 	},
 	{
 		"slug": "example-template-part-area",
-		"description": "example-template-part-area"
+		"description": "example-template-part-area",
+		"tags": [
+			"block-theme",
+			"php"
+		  ]
 	}
 ]

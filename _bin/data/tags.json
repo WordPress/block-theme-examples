@@ -1,0 +1,27 @@
+[
+    {
+        "slug": "block-theme",
+        "name": "BLOCK THEME",
+        "description": "These examples are child themes of a block theme."
+    },
+    {
+        "slug": "block-style",
+        "name": "BLOCK STYLE",
+        "description": "These examples implement block styles variations for some existing blocks."
+    },
+    {
+        "slug": "javascript",
+        "name": "JAVASCRIPT",
+        "description": "These examples use mostly javascript for the example implementation."
+    },
+    {
+        "slug": "php",
+        "name": "PHP",
+        "description": "These examples use mostly javascript for the example implementation."
+    },
+    {
+        "slug": "curation",
+        "name": "CURATION",
+        "description": "These examples implement some form of restricting user access in the Block Editor."
+    }
+]
