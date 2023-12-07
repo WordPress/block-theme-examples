@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "zip:create:all": "node ./_bin/createAllZipsExamples.js",
-    "table:update": "node ./_bin/updateTableMarkdown.js"
+    "table:update": "node ./_bin/updateTableMarkdown.js",
+    "table:update:all": "npm run table:update -- all"
   },
   "keywords": [],
   "author": "",

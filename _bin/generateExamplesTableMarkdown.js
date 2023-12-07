@@ -27,13 +27,16 @@ module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
     `${startMarker}\(\[\.\\n\\s\\S\]\*\)${endMarker}`,
     "gm"
   );
-  // const markdownContentTable = markdownContent
-  //   .match(regex)[0]
-  //   .replace(startMarker, "")
-  //   .replace(endMarker, "");
 
+  let processedExamplesJson;
+  if (slugReadme) {
+    processedExamplesJson = examplesJson.filter(({ slug }) => slug === slugReadme);
+  } 
+  else {
+    processedExamplesJson = examplesJson//.sort(sortFeaturedFirst);
+  }  
 
-  const markdownTableRows = examplesJson.map(({ slug, description }) => {
+  const markdownTableRows = processedExamplesJson.map(({ slug, description }) => {
 
     let playgroundUrl = PLAYGROUND_URL_WITH_THEMES.replaceAll(SLUG_EXAMPLE_MARKER,slug);
     const urlZip = URL_EXAMPLE_THEME_ZIP.replaceAll(SLUG_EXAMPLE_MARKER,slug);
@@ -59,9 +62,10 @@ module.exports = ({ slug: slugReadme, readmePath = readmePathRoot }) => {
 
   try {
     fs.writeFileSync(readmePath, markdownContentWithUpdatedTable);
-    info(`README.md was updated!`);
+    info(`${readmePath.split('block-theme-examples')[1]} was updated!`);
   } catch (err) {
     error(`An error has ocurred when saving the file ${readmePath}`);
     error(err);
   }
+
 };
