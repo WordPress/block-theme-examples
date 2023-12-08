@@ -3,16 +3,9 @@
 	"landingPage": "/wp-admin/post.php?post=5&action=edit",
 	"preferredVersions": {
 		"php": "8.0",
-		"wp": "latest"
+		"wp": "6.4"
 	},
 	"steps": [
-		{
-			"step": "installTheme",
-			"themeZipFile": {
-				"resource": "wordpress.org/themes",
-				"slug": "twentytwentyfour"
-			}
-		},
 		{
 			"step": "installTheme",
 			"themeZipFile": {
