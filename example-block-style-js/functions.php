@@ -20,7 +20,7 @@ function themeslug_editor_styles() {
 	add_editor_style( get_stylesheet_uri() );
 }
 
-add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_styles' );
+add_action( 'enqueue_block_assets', 'themeslug_enqueue_styles' );
 
 /**
  * Enqueues the `style.css` file for the front end.

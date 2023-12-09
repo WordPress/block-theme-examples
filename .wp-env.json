@@ -1,12 +1,14 @@
 {
-	"phpVersion": "7.4",
+	"phpVersion": "8",
 	"port": 3333,
+	"core": "WordPress/WordPress#6.4",
 	"themes": [
 		"./example-block-style-js",
 		"./example-block-style-php",
 		"./example-block-stylesheet",
 		"./example-block-variation",
 		"./example-build-process",
+		"./example-locked-pattern",
 		"./example-template-part-area",
 		"https://downloads.wordpress.org/theme/twentytwentyfour.1.0.zip"
 	],
