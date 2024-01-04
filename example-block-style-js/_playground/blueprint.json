@@ -10,7 +10,7 @@
 			"step": "installTheme",
 			"themeZipFile": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/wptrainingteam/block-theme-examples/master/_zips/example-block-style-js.zip"
+				"url": "https://raw.githubusercontent.com/WordPress/block-theme-examples/master/_zips/example-block-style-js.zip"
 			},
 			"options": {
 				"activate": true
@@ -29,7 +29,7 @@
 			"step": "importFile",
 			"file": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/wptrainingteam/block-theme-examples/master/example-block-style-js/_playground/export.xml"
+				"url": "https://raw.githubusercontent.com/WordPress/block-theme-examples/master/example-block-style-js/_playground/export.xml"
 			}
 		}
 	]
