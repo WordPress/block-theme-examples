@@ -64,5 +64,13 @@
 			"block-theme",
 			"curation"
 		  ]
+	},
+	{
+		"slug": "twentytwentyfour-starter-template-patterns",
+		"description": "twentytwentyfour-starter-template-patterns",
+		"tags": [
+			"block-theme",
+			"curation"
+		  ]
 	}
 ]
