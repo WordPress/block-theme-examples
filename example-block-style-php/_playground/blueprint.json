@@ -5,6 +5,9 @@
 		"php": "8.0",
 		"wp": "6.4"
 	},
+	"features": {
+        "networking": true
+    },
 	"steps": [
 		{
 			"step": "installTheme",
