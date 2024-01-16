@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "zip:create": "node ./_bin/createZipExample.js",
     "zip:create:all": "node ./_bin/createAllZipsExamples.js",
     "table:update": "node ./_bin/updateTableMarkdown.js",
     "table:update:all": "npm run table:update -- all"
